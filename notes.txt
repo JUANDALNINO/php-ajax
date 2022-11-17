@@ -1,0 +1,16 @@
+// First notes
+<script>
+        function sendRequest() {
+            let theObject = new XMLHttpRequest();
+            theObject.open('GET', 'backend.php', true);
+            theObject.setRequestHeader('Content-Type', 'application/x-ww-form-urlencoded');
+            theObject.onreadystatechange = function() {
+                document.getElementById('title').innerHTML = theObject.responseText;
+            }
+            theObject.send();
+        }
+</script>
+
+<?php
+    echo 'Hello World with Ajax';
+?>
