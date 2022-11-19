@@ -46,8 +46,9 @@ echo MSG;
 
 // Scope variables:
     $name = 'David';
+
     function getName() {
-        echo $name;
+        echo $fullName;
     }
     getName(); // Undefined variable
 
@@ -61,5 +62,30 @@ echo MSG;
 
 // 02.
 // Operators:
+
+$x = 14;
+$y = 3;
+echo $x % $y; // 2
+
+$num = 9;
+$num = $num%2;
+echo $num;
+
+$a = 2; $b = $a++; echo $b; // 2
+$a = 2; $b = ++$a; echo $b; // 3
+
+/*  == Equal
+    === Identical
+    != No equal
+    <> No equal
+    !== No identical
+*/
+
+/*
+    && 
+    || = O
+    ! = No
+*/
+
 
 ?>
